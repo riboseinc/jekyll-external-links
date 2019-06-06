@@ -21,10 +21,10 @@ def process_content(site_hostname, content, marker_html, link_selector, exclude_
   return content.to_s
 end
 
-def process_page_or_document(page_or_document)
-  site_hostname = URI(doc.site.config['url']).host
+def mark_links_in_page_or_document(page_or_document)
+  site_hostname = URI(page_or_document.site.config['url']).host
 
-  ext_link_config = doc.site.config['external_links'] || {}
+  ext_link_config = page_or_document.site.config['external_links'] || {}
 
   # The link is marked as external by:
   # (1) setting the rel attribute to external and
@@ -46,7 +46,7 @@ def process_page_or_document(page_or_document)
   unless page_or_document.asset_file?
     page_or_document.output = process_content(
       site_hostname,
-      doc.output,
+      page_or_document.output,
       marker_html,
       link_selector,
       unmarked_link_selectors)
@@ -69,5 +69,5 @@ Jekyll::Hooks.register :documents, :post_render do |doc|
 end
 
 Jekyll::Hooks.register :pages, :post_render do |page|
-  mark_links_in_page_or_document(doc)
+  mark_links_in_page_or_document(page)
 end
