@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/riboseinc/jekyll-external-links/'
   s.license       = 'MIT'
 
-  s.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(test|spec|features)/!) }
+  s.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(example-site|test|spec|features)/!) }
 
   s.add_runtime_dependency 'jekyll', '~> 3.8'
   s.add_runtime_dependency 'nokogiri'
