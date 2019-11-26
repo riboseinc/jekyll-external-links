@@ -1,0 +1,12 @@
+---
+layout: home
+---
+
+++++
+<!-- This includes Font Awesome icon kit. FA used by default as external link marker. -->
+<script src="https://kit.fontawesome.com/91bcc43528.js" crossorigin="anonymous"></script>
+++++
+
+link:/about/[This is an internal link.]
+
+https://github.com/[This is an external link.]

@@ -1,0 +1,7 @@
+title: jekyll-external-links test site
+baseurl: ""
+url: ""
+twitter_username: RiboseUS
+github_username:  riboseinc
+markdown: kramdown
+theme: minima

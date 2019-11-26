@@ -29,3 +29,15 @@ which implies that you are using Font Awesome.
 
 You can set marker_html to empty string and style links with custom CSS rule
 (e.g., `a[rel=external] { border-bottom-style: dashed; }`), though it’s less flexible.
+
+## Example site
+
+An example site is included in this repo.
+Use it to demo the plugin and to test it during development.
+The `/` path leads to Markdown version, the `/asciidoc/` path leads to AsciiDoc version.
+
+1. Clone this repository
+2. Navigate into the example-project directory
+3. Run `bundle`
+4. Run `bundle exec jekyll serve`
+5. Open in your favorite browser the URL shown
