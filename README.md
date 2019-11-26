@@ -24,7 +24,7 @@ external_links:
   marker_html: "<span class='ico-ext'><i class='fas fa-external-link-square-alt'></i></span>"
 ```
 
-As you can see, by default the Font Awesome’s `fa-externa-link-square-alt` icon is used,
+As you can see, by default the Font Awesome’s `fa-external-link-square-alt` icon is used,
 which implies that you are using Font Awesome.
 
 You can set marker_html to empty string and style links with custom CSS rule
