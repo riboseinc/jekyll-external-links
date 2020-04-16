@@ -67,7 +67,7 @@ selectors.
 
 ### `url`
 
-The `url` option in your configuration file is used when deciding
+The `url` option in your Jekyll configuration is used when deciding
 whether a given link is external or not. If not specified,
 only domain-relative links are considered internal.
 
