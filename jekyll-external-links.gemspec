@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = 'jekyll-external-links'
-  s.version       = '1.0.0'
+  s.version       = '1.0.1'
   s.authors       = ['Ribose Inc.']
   s.email         = ['open.source@ribose.com']
 
