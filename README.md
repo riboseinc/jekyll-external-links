@@ -15,9 +15,9 @@ and a list of selectors for which links are to be ignored
 A link is considered external if:
 
 * Its `href` attribute value starts with “http” or “https”, and
-* The domain name following “http(s)://” is not equal to the
-  domain name part from your site URL
-  (which you have to specify as `url` in Jekyll configuration).
+* the domain name following “http(s)://” is not equal to the
+  domain name part from site’s URL,
+  if such is specified in Jekyll configuration as `url`.
 
 ## Configuration
 
@@ -68,7 +68,8 @@ selectors.
 ### `url`
 
 The `url` option in your configuration file is used when deciding
-whether a given link is external or not.
+whether a given link is external or not. If not specified,
+only domain-relative links are considered internal.
 
 ## Example site
 
