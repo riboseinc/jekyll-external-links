@@ -78,7 +78,7 @@ Use it to demo the plugin and to test it during development.
 The `/` path leads to Markdown version, the `/asciidoc/` path leads to AsciiDoc version.
 
 1. Clone this repository
-2. Navigate into the example-project directory
+2. Navigate into the example-site directory
 3. Run `bundle`
 4. Run `bundle exec jekyll serve`
 5. Open in your favorite browser the URL shown
