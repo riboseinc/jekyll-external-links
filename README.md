@@ -88,6 +88,13 @@ The `/` path leads to Markdown version, the `/asciidoc/` path leads to AsciiDoc 
 4. Run `bundle exec jekyll serve`
 5. Open in your favorite browser the URL shown
 
+Note that, due to the fact that gem lockfiles are platform-specific,
+it may not work out of the box.
+
+The example site build may output deprecation warnings
+coming from the default Minima theme
+not being fully compatible with the latest Jekyll/SASS stack.
+
 ## Contribution
 
 Contributions are welcome.
