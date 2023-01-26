@@ -87,3 +87,11 @@ The `/` path leads to Markdown version, the `/asciidoc/` path leads to AsciiDoc 
 3. Run `bundle`
 4. Run `bundle exec jekyll serve`
 5. Open in your favorite browser the URL shown
+
+## Contribution
+
+Contributions are welcome.
+
+It’s appreciated if you also update the bundled example site to illustrate
+the changes in your PR. The example site adds the plugin via a relative path,
+and any changes you make to plugin code will take effect on next rebuild.
