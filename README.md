@@ -19,6 +19,11 @@ A link is considered external if:
   domain name part from site’s URL,
   if such is specified in Jekyll configuration as `url`.
 
+## Compatibility and dependency notes
+
+* Tested with Jekyll 4.3.2; see example site’s gem lockfile for further details.
+* Depends on Nokogiri for detecting and marking external links.
+
 ## Configuration
 
 Example configuration with defaults:
