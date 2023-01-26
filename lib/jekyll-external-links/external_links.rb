@@ -43,7 +43,10 @@ def mark_links_in_page_or_document(page_or_document)
     'a[href*=codecov]',
   ]
   
-  unless (page_or_document.respond_to?(:asset_file?) and page_or_document.asset_file?) or page_or_document.output_ext != ".html"
+  # Do not process assets or other non-HTML files
+  unless (page_or_document.respond_to?(:asset_file?) and
+      page_or_document.asset_file?) or
+      page_or_document.output_ext != ".html"
     page_or_document.output = process_content(
       site_hostname,
       page_or_document.output,
