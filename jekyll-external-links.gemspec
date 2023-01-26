@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(example-site|test|spec|features)/!) }
 
   s.add_runtime_dependency 'jekyll', '~> 4.0'
-  s.add_runtime_dependency 'nokogiri'
+  s.add_runtime_dependency 'nokogiri', '~> 1.0'
   s.add_development_dependency 'rake', '~> 12.0'
   s.add_development_dependency 'rubocop', '~> 0.50'
 
